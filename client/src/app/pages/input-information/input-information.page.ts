@@ -25,22 +25,6 @@ export class InputInformationComponent {
   constructor(private router: Router, private adrService: AddressService) {}
 
   onCreateAddress() {
-    // console.log(
-    //   this.receiverName1,
-    //   this.receiverPhoneNumber1,
-    //   this.receiverName2,
-    //   this.receiverPhoneNumber2,
-    //   this.receiver2Exist,
-    //   this.province,
-    //   this.city,
-    //   this.suburbs,
-    //   this.area,
-    //   this.address,
-    //   this.email,
-    //   this.postalCode,
-    //   this.setAsMainAddress
-    // );
-
     if (
       this.receiverName1 &&
       this.receiverPhoneNumber1 &&
@@ -90,3 +74,19 @@ export class InputInformationComponent {
     this.setAsMainAddress = false;
   }
 }
+
+// console.log(
+//   this.receiverName1,
+//   this.receiverPhoneNumber1,
+//   this.receiverName2,
+//   this.receiverPhoneNumber2,
+//   this.receiver2Exist,
+//   this.province,
+//   this.city,
+//   this.suburbs,
+//   this.area,
+//   this.address,
+//   this.email,
+//   this.postalCode,
+//   this.setAsMainAddress
+// );
