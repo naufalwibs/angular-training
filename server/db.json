@@ -1,0 +1,76 @@
+{
+  "address": [
+    {
+      "id": 1,
+      "receiverName1": "Rick Morthy",
+      "receiverPhoneNumber1": "081234567894",
+      "receiver2Exist": false,
+      "receiverName2": "",
+      "receiverPhoneNumber2": "",
+      "address": "Jl. Cililin 1",
+      "province": "Jakarta",
+      "city": "Jakarta",
+      "suburbs": "Jakarta Pusat",
+      "area": "Jakarta",
+      "email": "rick@morthy.com",
+      "postalCode": "17456",
+      "setAsMainAddress": false
+    },
+    {
+      "id": 2,
+      "receiverName1": "Rick Murphy",
+      "receiverPhoneNumber1": "081234567894",
+      "receiver2Exist": true,
+      "receiverName2": "Murphy Ray",
+      "receiverPhoneNumber2": "0809046540235",
+      "address": "Jl. Cililin 2",
+      "province": "Jakarta",
+      "city": "Jakarta",
+      "suburbs": "Jakarta Pusat",
+      "area": "Jakarta",
+      "email": "rick@morthy.com",
+      "postalCode": "17456",
+      "setAsMainAddress": true
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Frozen Stick 1",
+      "price": 80000,
+      "category": "Seafood",
+      "imageUrl": "http://www.llptoys.com/wp-content/uploads/2016/08/LP116889.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Frozen Stick 2",
+      "price": 80000,
+      "category": "Seafood",
+      "imageUrl": "http://www.llptoys.com/wp-content/uploads/2016/08/LP116889.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Frozen Stick 3",
+      "price": 80000,
+      "category": "Seafood",
+      "imageUrl": "http://www.llptoys.com/wp-content/uploads/2016/08/LP116889.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Frozen Stick 4",
+      "price": 80000,
+      "category": "Seafood",
+      "imageUrl": "http://www.llptoys.com/wp-content/uploads/2016/08/LP116889.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Frozen Stick 5",
+      "price": 80000,
+      "category": "Seafood",
+      "imageUrl": "http://www.llptoys.com/wp-content/uploads/2016/08/LP116889.jpg"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

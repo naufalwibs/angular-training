@@ -1,0 +1,127 @@
+<div class="container py-3">
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Nama Penerima"
+      [(ngModel)]="receiverName1"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="tel"
+      class="form-control"
+      id="nomorHP1"
+      placeholder="Nomor HP"
+      required
+      [(ngModel)]="receiverPhoneNumber1"
+    />
+  </div>
+  <div class="form-group form-check">
+    <input
+      type="checkbox"
+      class="form-check-input"
+      id="selectSecond"
+      [(ngModel)]="receiver2Exist"
+    />
+    <label class="form-check-label" for="selectSecond"
+      >Tambah info penerima kedua</label
+    >
+  </div>
+  <div *ngIf="receiver2Exist" class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      id="namaPenerima2"
+      placeholder="Nama Penerima Kedua"
+      [(ngModel)]="receiverName2"
+    />
+  </div>
+  <div *ngIf="receiver2Exist" class="form-group">
+    <input
+      type="tel"
+      class="form-control"
+      id="nomorHP2"
+      placeholder="Nomor HP"
+      [(ngModel)]="receiverPhoneNumber2"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      placeholder="Email"
+      [(ngModel)]="email"
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      id="maps"
+      placeholder="Map"
+      disabled
+    />
+  </div>
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      id="alamat"
+      placeholder="Alamat"
+      [(ngModel)]="address"
+    />
+  </div>
+  <div class="form-group">
+    <select [(ngModel)]="province" class="custom-select">
+      <option value="" disabled>Provinsi</option>
+      <option value="Jakarta">Jakarta</option>
+      <option value="Bandung">Bandung</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <select [(ngModel)]="city" class="custom-select">
+      <option value="" disabled>Kota</option>
+      <option value="Jakarta">Jakarta</option>
+      <option value="Bandung">Bandung</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <select [(ngModel)]="suburbs" class="custom-select">
+      <option value="" disabled>Kecamatan</option>
+      <option value="Jakarta Pusat">Jakarta Pusat</option>
+      <option value="Bandung Pusat">Bandung Pusat</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <select [(ngModel)]="area" class="custom-select">
+      <option value="" disabled>Kelurahan/Desa</option>
+      <option value="Jakarta">Jakarta</option>
+      <option value="Bandung">Bandung</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control"
+      id="kodePos"
+      placeholder="Kode Pos"
+      [(ngModel)]="postalCode"
+    />
+  </div>
+  <div class="form-group form-check">
+    <input
+      type="checkbox"
+      class="form-check-input"
+      id="selectMain"
+      [(ngModel)]="setAsMainAddress"
+    />
+    <label class="form-check-label" for="selectMain"
+      >Pakai sebagai alamat utama</label
+    >
+  </div>
+  <button (click)="onCreateAddress()" type="submit" class="btn btn-primary">
+    Simpan Alamat
+  </button>
+</div>

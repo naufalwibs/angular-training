@@ -1,0 +1,26 @@
+<div *ngIf="!isFetching" class="container">
+  <!-- <div *ngFor="let adr of addressList" class="card">
+    <p>{{ adr.receiverName1 }}</p>
+    <p>{{ adr.receiverPhoneNumber1 }}</p>
+    <p *ngIf="adr.receiver2Exist">{{ adr.receiverName2 }}</p>
+    <p *ngIf="adr.receiver2Exist">{{ adr.receiverPhoneNumber2 }}</p>
+    <p>{{ adr.address }}</p>
+    <p>{{ adr.province }}</p>
+    <p>{{ adr.city }}</p>
+    <p>{{ adr.suburbs }}</p>
+    <p>{{ adr.area }}</p>
+    <p>{{ adr.email }}</p>
+    <p>{{ adr.postalCode }}</p>
+    <p class="text-right" *ngIf="adr.setAsMainAddress">Alamat Utama</p>
+    <button class="btn btn-danger" (click)="onDeleteAddress(adr.id)">
+      Delete
+    </button>
+  </div> -->
+  <app-address-card
+    *ngFor="let adr of addressList"
+    [adr]="adr"
+  ></app-address-card>
+  <button routerLink="/add-new-address" class="btn btn-primary my-3">
+    Tambah Alamat Baru
+  </button>
+</div>
