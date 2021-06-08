@@ -41,37 +41,37 @@ export class InputInformationComponent {
     //   this.setAsMainAddress
     // );
 
-    // if (
-    //   this.receiverName1 &&
-    //   this.receiverPhoneNumber1 &&
-    //   this.province &&
-    //   this.city &&
-    //   this.suburbs &&
-    //   this.area &&
-    //   this.address &&
-    //   this.email &&
-    //   this.postalCode
-    // ) {
-    this.adrService.addAddress({
-      receiverName1: this.receiverName1,
-      receiverPhoneNumber1: this.receiverPhoneNumber1,
-      receiverName2: this.receiverName2,
-      receiverPhoneNumber2: this.receiverPhoneNumber2,
-      receiver2Exist: this.receiver2Exist,
-      province: this.province,
-      city: this.city,
-      suburbs: this.suburbs,
-      area: this.area,
-      address: this.address,
-      email: this.email,
-      postalCode: this.postalCode,
-      setAsMainAddress: this.setAsMainAddress,
-    });
-    this.router.navigate(['/address-list']);
-    this.clearForm();
-    // } else {
-    //   alert('Fill the empty');
-    // }
+    if (
+      this.receiverName1 &&
+      this.receiverPhoneNumber1 &&
+      this.province &&
+      this.city &&
+      this.suburbs &&
+      this.area &&
+      this.address &&
+      this.email &&
+      this.postalCode
+    ) {
+      this.adrService.addAddress({
+        receiverName1: this.receiverName1,
+        receiverPhoneNumber1: this.receiverPhoneNumber1,
+        receiverName2: this.receiverName2,
+        receiverPhoneNumber2: this.receiverPhoneNumber2,
+        receiver2Exist: this.receiver2Exist,
+        province: this.province,
+        city: this.city,
+        suburbs: this.suburbs,
+        area: this.area,
+        address: this.address,
+        email: this.email,
+        postalCode: this.postalCode,
+        setAsMainAddress: this.setAsMainAddress,
+      });
+      this.router.navigate(['/address-list']);
+      this.clearForm();
+    } else {
+      alert('Fill the empty');
+    }
   }
 
   clearForm() {

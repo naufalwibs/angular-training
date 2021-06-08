@@ -1,17 +1,24 @@
-<div class="card">
-  <strong>{{ adr.receiverName1 }}</strong>
-  <p>{{ adr.receiverPhoneNumber1 }}</p>
-  <p *ngIf="adr.receiver2Exist">{{ adr.receiverName2 }}</p>
-  <p *ngIf="adr.receiver2Exist">{{ adr.receiverPhoneNumber2 }}</p>
-  <p>{{ adr.address }}</p>
-  <p>{{ adr.province }}</p>
-  <p>{{ adr.city }}</p>
-  <p>{{ adr.suburbs }}</p>
-  <p>{{ adr.area }}</p>
-  <p>{{ adr.email }}</p>
-  <p>{{ adr.postalCode }}</p>
-  <p class="text-right" *ngIf="adr.setAsMainAddress">Alamat Utama</p>
-  <button class="btn btn-danger" (click)="onDeleteAddress(adr.id)">
-    Delete
-  </button>
+<div class="card mt-3">
+  <div class="card-body">
+    <h5 class="card-title">{{ adr.receiverName1 }}</h5>
+    <p class="card-text">
+      {{ adr.receiverPhoneNumber1 }}
+    </p>
+    <p class="text-right" *ngIf="adr.setAsMainAddress">Alamat Utama</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{ adr.address }}</li>
+    <li class="list-group-item">{{ adr.province }}, {{ adr.city }}</li>
+    <li class="list-group-item">{{ adr.area }}, {{ adr.suburbs }}</li>
+    <li class="list-group-item">{{ adr.email }}</li>
+    <li class="list-group-item">{{ adr.postalCode }}</li>
+    <li class="list-group-item" *ngIf="adr.receiver2Exist">
+      {{ adr.receiverName2 }}, {{ adr.receiverPhoneNumber2 }}
+    </li>
+  </ul>
+  <div class="card-body">
+    <button class="btn btn-danger" (click)="onDeleteAddress(adr.id)">
+      Delete
+    </button>
+  </div>
 </div>
